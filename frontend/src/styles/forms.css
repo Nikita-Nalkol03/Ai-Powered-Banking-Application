@@ -1,0 +1,50 @@
+.form-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-stack label,
+.auth-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #394b63;
+  font-size: 0.87rem;
+  font-weight: 600;
+}
+
+.form-stack input,
+.form-stack select,
+.auth-card input,
+.auth-card select {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #dbe3ed;
+  border-radius: 9px;
+  outline: none;
+  background: #fff;
+  color: #1b2e49;
+  font-weight: 400;
+}
+
+.form-stack input:focus,
+.form-stack select:focus,
+.auth-card input:focus,
+.auth-card select:focus {
+  border-color: #5a8fd2;
+  box-shadow: 0 0 0 3px rgba(38, 104, 183, 0.12);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 480px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
